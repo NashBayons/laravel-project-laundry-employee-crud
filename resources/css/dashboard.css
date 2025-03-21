@@ -1,0 +1,182 @@
+.intro,
+.intro * {
+    box-sizing: border-box;
+}
+
+.intro {
+    background: linear-gradient(137.15deg, rgba(23, 232, 255, 0.00) 0%, rgba(23, 232, 255, 0.18) 86.00000143051147%, rgba(23, 232, 255, 0.20) 100%), linear-gradient(to left, rgba(7, 156, 214, 0.20), rgba(7, 156, 214, 0.20)), linear-gradient(119.69deg, rgba(93, 141, 230, 0.00) 0%, rgba(142, 176, 239, 0.10) 45.691317319869995%, rgba(36, 89, 188, 0.20) 96.88477516174316%), linear-gradient(to left, rgba(47, 53, 109, 0.20), rgba(47, 53, 109, 0.20));
+    height: 650px;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+.rectangle-1 {
+    background: #f4f4f4;
+    border-radius: 100px;
+    opacity: 0.4;
+    width: 572px;
+    height: 691px;
+    position: absolute;
+    left: -51px;
+    top: 45px;
+}
+
+.laundry-lessons-finding-clean-moments-in-the-chaos {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Jomolhari-Regular', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    position: absolute;
+    left: 572px;
+    top: 56px;
+    width: 649px;
+    height: 153px;
+}
+
+.dirty-laundry-can-be-overwhelming-but-it-s-a-reminder-that-even-messes-can-be-cleaned-each-load-brings-us-closer-to-a-fresh-start {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'IstokWeb-Regular', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    left: 553px;
+    top: 580px;
+    width: 609px;
+    height: 86px;
+}
+
+.image {
+    width: 521px;
+    height: 432px;
+    position: absolute;
+    left: 0px;
+    top: 166px;
+    object-fit: cover;
+}
+
+.ellipse-2 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 1050px;
+    top: 502px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-3 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 1182px;
+    top: 561px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-4 {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: 897px;
+    top: 502px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-5 {
+    width: 54px;
+    height: 51px;
+    position: absolute;
+    left: 1100px;
+    top: 339px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-6 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 1162px;
+    top: 390px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-7 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 1029px;
+    top: 404px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-8 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 1029px;
+    top: 228px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-9 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 674px;
+    top: 6px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.ellipse-10 {
+    width: 77px;
+    height: 78px;
+    position: absolute;
+    left: 533px;
+    top: 343px;
+    overflow: visible;
+    object-fit: cover;
+}
+
+.button {
+    position: absolute;
+    inset: 0;
+}
+
+.rectangle-7 {
+    background: #d9d9d9;
+    border-radius: 100px;
+    width: 174px;
+    height: 56px;
+    position: absolute;
+    left: 577px;
+    top: 498px;
+}
+
+.get-started {
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Inter-Italic', sans-serif;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 400;
+    font-style: italic;
+    position: absolute;
+    left: 592px;
+    top: 512px;
+    width: 173px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
