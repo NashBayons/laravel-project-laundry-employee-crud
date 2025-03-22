@@ -105,11 +105,10 @@
 <body>
   <div class="view-order-status-customer">
     <div class="sidebar">
-    <img src="{{ asset('img/1ds-removebg-preview.png') }}" alt="Image">
+      <img src="{{ asset('img/1ds-removebg-preview.png') }}" alt="Image">
       <nav class="nav flex-column">
         <a class="nav-link" href="{{ route('transactions.index') }}">Order/ Transaction</a>
         <a class="nav-link" href="{{ route('orders.index') }}">View Laundry</a>
-        <a class="nav-link" href="#">admin</a>
       </nav>
       <div class="log-out">Log Out</div>
     </div>
@@ -129,7 +128,7 @@
             @foreach ($orders as $order)
               <tr>
                 <td>{{ $order->date }}</td>
-                <td>{{ $order->order_type }}</td>
+                <td>{{ $order->service_type }}</td>
                 <td>{{ $order->status }}</td>
                 <td><div class="view-button">View</div></td>
               </tr>

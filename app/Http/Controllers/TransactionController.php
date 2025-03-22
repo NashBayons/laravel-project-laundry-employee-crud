@@ -2,17 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Transaction;
-use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class TransactionController extends Controller
 {
-    public function index()
+    public function index(): View
     {
-        // Fetch all transactions from the database
-        $transactions = Transaction::all();
+        return view('transactions.index'); // Reference the correct view
+    }
 
-        // Pass the transactions to the view
-        return view('transactions.index', compact('transactions'));
+    public function create(): View
+    {
+        return view('transactions.create'); // Reference the create view
     }
 }

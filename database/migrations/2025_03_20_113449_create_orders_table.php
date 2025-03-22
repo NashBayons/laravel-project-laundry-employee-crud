@@ -10,19 +10,19 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up()
-{
-    Schema::create('orders', function (Blueprint $table) {
-        $table->id();
-        $table->string('order_name');
-        $table->decimal('weight', 8, 2);
-        $table->date('date');
-        $table->string('service_type');
-        $table->text('special_instruction')->nullable();
-        $table->string('status')->default('Pending');
-        $table->timestamps();
-    });
-}
-
+    {
+        Schema::create('orders', function (Blueprint $table) {
+            $table->id();
+            $table->string('order_name');
+            $table->decimal('weight', 8, 2);
+            $table->date('date');
+            $table->string('service_type');
+            $table->string('status')->default('Pending');
+            $table->string('payment_method');
+            $table->decimal('amount', 8, 2);
+            $table->timestamps();
+        });
+    }
     /**
      * Reverse the migrations.
      */
