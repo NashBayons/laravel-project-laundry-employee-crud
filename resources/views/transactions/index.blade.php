@@ -141,12 +141,12 @@
         @csrf <!-- CSRF token for security -->
         <div class="form-group">
           <label for="orderName">Name of the order</label>
-          <input type="text" class="form-control" id="orderName" name="order_name" placeholder="Enter order name" value="Raven" required>
+          <input type="text" class="form-control" id="orderName" name="order_name" placeholder="Enter order name" value="Raven" required >
         </div>
         <div class="form-group">
           <label for="weight">Weight</label>
           <div class="input-group">
-            <input type="number" class="form-control" id="weight" name="weight" placeholder="Enter weight" value="1" required>
+            <input type="number" class="form-control" id="weight" name="weight" placeholder="Enter weight" value="1" required step="0.01">
             <div class="input-group-append">
               <span class="input-group-text">kg</span>
             </div>
@@ -174,7 +174,7 @@
         </div>
         <div class="form-group">
           <label for="amount">Amount:</label>
-          <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" value="2" required>
+          <input type="number" class="form-control" id="amount" name="amount" placeholder="Enter amount" value="2" required step="0.01">
         </div>
         <div class="form-group">
           <button type="submit" class="btn btn-dark">Submit Order</button>

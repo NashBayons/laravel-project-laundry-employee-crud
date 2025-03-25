@@ -23,6 +23,25 @@ class User extends Authenticatable
         'password',
     ];
 
+    const ROLE_ADMIN = 'admin';
+    const ROLE_EMPLOYEE = 'employee';
+    const ROLE_CUSTOMER = 'customer';    
+
+    public function isAdmin()
+    {
+        return $this->role === self::ROLE_ADMIN;
+    }
+
+    public function isEmployee()
+    {
+        return $this->role === self::ROLE_EMPLOYEE;
+    }
+
+    public function isCustomer()
+    {
+        return $this->role === self::ROLE_CUSTOMER;
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
