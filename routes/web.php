@@ -38,7 +38,16 @@ Route::middleware('auth')->group(function () {
 
     Route::middleware(['auth', 'admin'])->prefix('admin')->group(function () {
         Route::resource('employees', EmployeeController::class)
-            ->names('admin.employees');
+            ->names([
+                'index' => 'admin.employee.index',
+                'create' => 'admin.employee.create',
+                'store' => 'admin.employee.store',
+                'show' => 'admin.employee.show',
+                'edit' => 'admin.employee.edit',
+                'update' => 'admin.employee.update',
+                'destroy' => 'admin.employee.destroy',
+            ]);
     });
+
 
 require __DIR__.'/auth.php';

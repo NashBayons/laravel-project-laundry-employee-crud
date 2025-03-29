@@ -4,7 +4,7 @@
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">Add New Employee</h1>
 
-    <form action="{{ route('admin.employees.store') }}" method="POST" class="max-w-lg">
+    <form action="{{ route('admin.employee.store') }}" method="POST" class="max-w-lg">
         @csrf
         <div class="mb-4">
             <label for="first_name" class="block mb-2">First Name</label>

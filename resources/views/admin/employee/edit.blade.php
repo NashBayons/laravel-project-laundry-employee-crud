@@ -6,7 +6,7 @@
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">Edit Employee: {{ $employee->full_name }}</h1>
 
-    <form action="{{ route('admin.employees.update', $employee) }}" method="POST" class="max-w-lg">
+    <form action="{{ route('admin.employee.update', $employee) }}" method="POST" class="max-w-lg">
         @csrf
         @method('PUT')
 
@@ -64,7 +64,7 @@
             <label for="hire_date" class="block mb-2">Hire Date (Optional)</label>
             <input type="date" name="hire_date" id="hire_date" 
                    class="w-full px-3 py-2 border rounded" 
-                   value="{{ old('hire_date', $employee->hire_date ? $employee->hire_date->format('Y-m-d') : '') }}">
+                   value="{{ old('hire_date', $employee->hire_date) }}">
             @error('hire_date')
                 <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
             @enderror
@@ -91,7 +91,7 @@
             <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
                 Update Employee
             </button>
-            <a href="{{ route('admin.employees.index') }}" class="text-gray-600 hover:underline">
+            <a href="{{ route('admin.employee.index') }}" class="text-gray-600 hover:underline">
                 Cancel
             </a>
         </div>

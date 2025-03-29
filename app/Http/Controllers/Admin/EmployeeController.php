@@ -61,6 +61,11 @@ class EmployeeController extends Controller
      */
     public function edit(Employee $employee)
     {
+
+        if ($employee->hire_date && is_object($employee->hire_date)) {
+            $employee->hire_date = $employee->hire_date->format('Y-m-d');
+        }
+
         return view('admin.employee.edit', compact('employee'));
     }
 
@@ -92,7 +97,7 @@ class EmployeeController extends Controller
     {
         $employee->delete();
 
-        return redirect()->route('admin.employee')
+        return redirect()->route('admin.employee.index')
             ->with('Success','Employee deleted successful.');
     }
 }

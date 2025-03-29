@@ -4,7 +4,7 @@
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-2xl font-bold mb-6">Employees</h1>
 
-    <a href="{{ route('admin.employees.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded mb-4 inline-block">
+    <a href="{{ route('admin.employee.create') }}" class="bg-blue-500 text-white px-4 py-2 rounded mb-4 inline-block">
         Add New Employee
     </a>
 
@@ -27,7 +27,7 @@
         <tbody>
             @foreach($employees as $employee)
             <tr class="border-b">
-                <td class="px-4 py-2">{{ $employee->full_name }}</td>
+                <td class="px-4 py-2">{{ $employee->getFullName() }}</td>
                 <td class="px-4 py-2">{{ $employee->email }}</td>
                 <td class="px-4 py-2">{{ $employee->position ?? 'N/A' }}</td>
                 <td class="px-4 py-2">
@@ -37,8 +37,8 @@
                 </td>
                 <td class="px-4 py-2">
                     <div class="flex space-x-2">
-                        <a href="{{ route('admin.employees.edit', $employee) }}" class="text-blue-500">Edit</a>
-                        <form action="{{ route('admin.employees.destroy', $employee) }}" method="POST" 
+                        <a href="{{ route('admin.employee.edit', $employee) }}" class="text-blue-500">Edit</a>
+                        <form action="{{ route('admin.employee.destroy', $employee) }}" method="POST" 
                               onsubmit="return confirm('Are you sure you want to delete this employee?');">
                             @csrf
                             @method('DELETE')
